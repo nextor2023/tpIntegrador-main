@@ -2,21 +2,20 @@
 <html lang="en">
 
 <head>
-    
-
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap  -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link href="miestilo.css" rel="stylesheet" type="text/css">
     <link href="estiloTiket.css" rel="stylesheet" type="text/css">
-    <title>Codo a Codo</title>
+    <title>TP Integrador</title>
 </head>
 
 <body>
-    <!-- Nav con Bootstrap -->
+    <!-- Menu Nav con Bootstrap -->
     <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top opacity-75">
         <div class="container">
             <div class="logo-conf">
@@ -50,12 +49,11 @@
             </div>
         </div>
     </nav>
-    <!--Termina el nav -->
+    <!--Termina el nav y empieza el main-->
 
-    
-
+    <!--Creo un Div container para todo el main-->
     <main class="container main-container p-4 mb-3 mt-4">
-        <!-- carta de descuento-->
+        <!--un container para cada carta de descuento-->
         <div class="container  card-container p-0">
             <div class="row justify-content-center">
 
@@ -63,7 +61,7 @@
                     <div id="estudiante" class="card-body border border-info">
                         <h5 class="card-title">Estudiante</h5>
                         <h6 class="card-subtitle mb-2 text-muted">Tienen un descuento</h6>
-                        <h6 id="s80"class="card-sub-subtitle fw-bold">40%</h6>
+                        <h6 id="s80"class="card-sub-subtitle fw-bold">80%</h6>
                         <p class="card-text text-secondary">* presentar documentación</p>
                     </div>
                 </div>
@@ -71,7 +69,7 @@
                 <div class="mb-1 col-xs-11 col-sm-4 col-md-4 col-lg-4 text-center">
                     <div id="trainee" class="card-body border border-primary">
                         <h5 class="card-title">Trainee</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Con descuentos  hasta el </h6>
+                        <h6 class="card-subtitle mb-2 text-muted">Tienen un descuento</h6>
                         <h6 class="card-sub-subtitle fw-bold">50%</h6>
                         <p class="card-text text-secondary">* presentar documentación</p>
                     </div>
@@ -87,14 +85,13 @@
 
                 </div>
             </div>
-            
+            <!--fin del div cartas de descuentos-->
             
             <div class="venta-container container text-center">
                 <p class="m-0">VENTA</p>
-                <h1 class="m-0">VALOR DE TIKET $32000</h1>
+                <h1 class="m-0">VALOR DE TIKET $200</h1>
             </div>
-            
-
+            <!--acá empieza el Form, 8 horas para acomodar un input x dios-->
             <form class="row g-3 m-0 p-0">
                 <!--nombre y apellido-->
                 <div class="col-md-6 col-sm-6 col-lg-6 p-1">
@@ -121,7 +118,9 @@
                     </select>
                 </div>
 
-            
+                <!--Acá va el calculo del monto a pagar-->
+                <div class="alert alert-primary p-2 mt-2 mb-2 ms-1" role="alert">
+                    Total a Pagar: <span id="aPagar"></span> </div>
 
                 <!--Botones-->
                 <div class="col-md-6 col-sm-6 col-lg-6 p-1">
@@ -163,7 +162,12 @@
         </div>
     </footer>
      
-    
+    <!--Mi script-->
+    <script src="script.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
